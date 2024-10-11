@@ -1,0 +1,85 @@
+/* PlayerCard.css */
+.player-card {
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #4caf50;
+  }
+  
+  .resource {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .resource span {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .resource-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .resource-buttons button {
+    margin: 5px 0;
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .resource-buttons button:hover {
+    background-color: #45a049;
+  }
+  
+  .next-round {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .next-round:hover {
+    background-color: #1976D2;
+  }
+  
+  /* Reszponzív stílus kisebb képernyőkhöz */
+  @media (max-width: 600px) {
+    .player-card {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .resource {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .resource-buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .resource-buttons button {
+      width: 48%;
+    }
+  }
+  
